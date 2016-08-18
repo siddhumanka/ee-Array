@@ -1,4 +1,4 @@
-
+import java.util.Arrays;
 
 public class ArrayProblems {
     public static int hammingDistance(int[] aList, int[] bList){
@@ -16,8 +16,7 @@ public class ArrayProblems {
         int [] aList = {1, 2, 0 ,4, 5, 4, 3, 9, 1};
         int [] bList = {1, 2, 8, 4, 5, 4, 3, 5, 1};
         System.out.println("Hamming distance between array" +
-                " {1, 2, 3, 4, 5, 4, 3, 2, 1} and " +
-                "{1, 2, 8, 4, 5, 4, 3, 5, 1} is "+
+                Arrays.toString(aList)+" and array"+Arrays.toString(bList)+" is "+
                 ArrayProblems.hammingDistance(aList,bList));
     }
 }
